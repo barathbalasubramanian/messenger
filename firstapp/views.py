@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Person
 from .forms import OrderForm,MsgForm
+import os
 from twilio.rest import Client 
 
 # Create your views here.
@@ -59,12 +60,12 @@ def msg(request,pk) :
         form.save()
         
         SID = 'ACc52cdc026ba39d5bd793d6823daaf513'
-        AUTH_TOKEN = '785a8f93c94fa6a823b0c8fbc4f8acc0'
+        AUTH_TOKEN = 'ce9c5343f3d69d738da42f04949ea5ca'
 
         cl = Client(SID,AUTH_TOKEN)
         
         try :
-            cl.messages.create(body= msg_, from_= '+18563861874' ,to='+91'+data.ph_num)
+            cl.messages.create(body= msg_, from_= '+18563861874' ,to='+91'+str(data.ph_num))
         except :
             cl.messages.create(body= msg_, from_= '+18563861874' ,to='+919345615762')
             
