@@ -1,0 +1,18 @@
+
+<div>
+  <div class='details'>
+    
+    {% for data in datas %}
+    <div class='contacts'>
+      <div class='con-name'>{{ data.name }}</div>
+
+      <div class='btn'>
+        <button><a href="msg/{{data.id}}">Msg</a></button>
+        <button unicorn:key="{{data.id}}"><a href="edit/{{ data.id }}/"> edit </button></a>
+        <button unicorn:click="delete('{{data.id}}')" >Delete</button>  
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT FOUND</title>
+    <link rel="stylesheet" href="{% static '404.css' %}">
+</head>
+<body>
+    <h1>404</h1>
+    <div class="cloak__wrapper">
+        <div class="cloak__container">
+            <div class="cloak"></div>
+        </div>
+    </div>
+    <div class="info"><a href={% url 'home' %} target="_blank" rel="noreferrer noopener">Home</a></div>
+</body>
+</html>

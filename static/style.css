@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body {
+    background-color: #202020;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+*{
+    outline: none;
+    border: none;
+    user-select:none; 
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: 1em 1em 3em 1em;
+    cursor: pointer;
+   
+}
+
+input {
+    color: #fff0f0;
+    font-size: 20px;
+
+}
+
+input:focus::placeholder {
+    transform: translateX(0px) translateY(-12px);
+    color:rgb(150, 0, 250);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .5s;
+}
+
+.form-control {
+    padding: .75em .5em;
+    border-radius: 2px;
+    width: 300px;
+    background: none;
+    border-bottom:2px solid rgb(150, 0, 250);
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type='submit'] {
+    padding: .5em;
+    text-transform: uppercase;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    background-color: rgb(150, 0, 250);
+    color: rgb(215 208 208);
+}
+
+input[type='submit']:hover {
+    background:none;
+    cursor: pointer;
+    transition: .5s;
+    color: rgb(150, 0, 250);
+    letter-spacing: 5px;
+}
+
+::placeholder {
+    color: rgb(99, 99, 99);
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 2em;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    padding: .75em .75em .75em 0;
+}
+
+.con-name {
+    display: flex;
+    flex: 0 0 35%;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.25em;
+    text-transform: capitalize;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 75%;
+    gap: 1em;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: .4em .8em;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+h2,h1{
+    letter-spacing: 5px;
+}
