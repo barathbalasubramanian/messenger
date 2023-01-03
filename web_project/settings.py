@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(g#&=e0jy()ce*(j7%8a!t^6@yj9)=9h+z11kybp!mto&zkquy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.0:6587','web-production-66a9.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.0:6587','up.railway.app']
 # ALLOWED_HOSTS = []
 
 # Application definition
@@ -132,7 +132,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
