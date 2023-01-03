@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(g#&=e0jy()ce*(j7%8a!t^6@yj9)=9h+z11kybp!mto&zkquy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://web-production-66a9.up.railway.app/']
 # ALLOWED_HOSTS = []
 
 # Application definition
@@ -120,11 +120,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / 'static'
+
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
-MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
+STATIC_ROOT = BASE_DIR / 'static'
+# MEDIA_URL = '/images/'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+# MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
 
 # Default primary key field type
